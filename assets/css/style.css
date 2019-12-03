@@ -1145,7 +1145,7 @@ footer .active {
     }
     .projects-filters ul {
         flex-wrap: wrap;
-        margin: 5px;
+        padding: 3px;
     }
     .projects-filters li {
         padding: 0;
