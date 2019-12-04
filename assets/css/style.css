@@ -1064,6 +1064,7 @@ footer .active {
     }
     .button {
         padding: 11px 35px;
+        margin-top: 0px;
     }
     .default {
         padding-bottom: 60px;
@@ -1295,6 +1296,7 @@ footer .active {
     .contact-us--area {
         max-width: 350px;
         margin: auto;
+        height: auto;
     }
     .contact-us--area h4 {
         margin: 40px 20px;
