@@ -1324,6 +1324,7 @@ footer .active {
     .footer-social--area {
         margin-bottom: 30px;
         align-items: center;
+        margin-right: 0;
     }
     .footer-desc {
         order: -2;
