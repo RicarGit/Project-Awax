@@ -1100,9 +1100,9 @@ footer .active {
         font-size: 16px;
         margin-left: 30px;;
     }
-    .menu li.active a {
-        border: 0;
-        color: #B28756;
+    .menu li a:hover,
+    .menu .active a {
+        border: none;
     }
     .banner h1 {
         font-size: 30px;
