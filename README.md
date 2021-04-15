@@ -18,3 +18,7 @@ Thats all for now~
 # Adding the final result of the pages on my projects!
 
 ![](Awax.jpg)
+
+# Mobile
+
+![](Awax-Mobile.jpg)
