@@ -14,3 +14,7 @@ including on the top menu, and the sliders~
 
 
 Thats all for now~
+
+# Adding the final result of the pages on my projects!
+
+![](Awax.jpg)
