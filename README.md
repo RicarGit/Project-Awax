@@ -17,6 +17,8 @@ Thats all for now~
 
 # Adding the final result of the pages on my projects!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6ec7f733-8a61-4acc-bfa9-db0f56107edc/deploy-status)](https://app.netlify.com/sites/project-awax/deploys) -- https://project-awax.netlify.app
+
 ![](Awax.jpg)
 
 # Mobile
