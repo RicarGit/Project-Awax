@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', 'sans-serif';
@@ -287,6 +288,10 @@ section.default.service {
 .projects-images-area img {
     width: inherit;
     height: inherit;
+}
+.projects-images-area:hover {
+    scale: 1.1;
+    transition: 0.4s ease;
 }
 .projects-images--info {
     position: absolute;
