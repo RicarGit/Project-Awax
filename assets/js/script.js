@@ -26,11 +26,14 @@ const slideImages = [
   'url(../../media/foto6.jpg)'
 ]
 
-const addsClassActiveFirstBannerDots = ([firstDot]) =>
+const addsClassActiveFirstSliderDots = ([firstDot]) =>
   firstDot.classList.add('active')
 
 const addsClassActiveToSlide = ([firstSlide]) =>
   firstSlide.classList.add('active-slide')
+
+const addsBgImageToFirstSlide = ([firstSlide], [firstImage]) =>
+  firstSlide.style.setProperty('background-image', firstImage)
 
 const removeClassActive = elements =>
   elements.forEach(el => el.classList.remove('active'))
@@ -38,17 +41,25 @@ const removeClassActive = elements =>
 const removeClassActiveSlide = elements =>
   elements.forEach(el => el.classList.remove('active-slide'))
 
+const activeCurrentImage = (slide, slideImage, index) => {
+  const currentSlide = slide[index]
+  const currentSlideImage = slideImage[index]
+
+  currentSlide.classList.add('active-slide')
+  currentSlide.style.setProperty('background-image', currentSlideImage)
+}
+
 sliderDots.forEach((dot, index) => dot.addEventListener('click', e => {
   removeClassActive(sliderDots)
   removeClassActiveSlide(slide)
-  e.target.classList.add('active')
-  slide[index].classList.add('active-slide')
 
-  slide[index].style.setProperty('background-image', slideImages[index])
+  e.target.classList.add('active')
+  activeCurrentImage(slide, slideImages, index)
 }))
 
-addsClassActiveFirstBannerDots(sliderDots)
+addsClassActiveFirstSliderDots(sliderDots)
 addsClassActiveToSlide(slide)
+addsBgImageToFirstSlide(slide, slideImages)
 
 
 // OUR PROJECTS NAV
@@ -56,6 +67,9 @@ const filters = document.querySelectorAll('.filters ul li a')
 
 const activeFirstElement = ([firstElement]) =>
   firstElement.classList.add('active')
+
+const removeActiveClass = elements =>
+  elements.forEach(el => el.classList.remove('active'))
 
 filters.forEach(a => {
   a.addEventListener('click', e => {
@@ -66,3 +80,6 @@ filters.forEach(a => {
   })
 })
 activeFirstElement(filters)
+
+
+// OUR TEAM SLIDER

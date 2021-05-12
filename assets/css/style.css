@@ -74,7 +74,6 @@ header {
 	width: 100vw;
 	height: 100%;
 	position: absolute;
-	background-image: url('../../media/bg.jpg');
 	background-size: cover;
 	background-position: center;
 	display: none;
@@ -95,6 +94,7 @@ header {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 70px;
+	text-align: center;
 }
 .banner h1 span {
 	color: #B28756;
@@ -134,6 +134,10 @@ header {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 13px;
+}
+.button:hover {
+	scale: 1.1;
+	transition: scale .3s;
 }
 
 /* ÁREA DAS SECTIONS */
@@ -177,9 +181,6 @@ section.default.service {
 }
 
 
-
-/* CSS DE ÁREAS ESPECÍFICAS*/
-
 /* ABOUT US SECTION*/
 
 .about-us {
@@ -200,9 +201,12 @@ section.default.service {
 	width: 450px;
 	box-shadow: 0px 5px 20px #777;
 }
+.about-us .button {
+	display: inline-block;
+}
+
 
 /* SERVICES SECTION */
-
 
 .services {
 	flex: 1;
@@ -222,17 +226,17 @@ section.default.service {
 	text-transform: uppercase;
 	line-height: 27px;
 	padding: 0 26px;
-	cursor: pointer;
+	pointer-events: none;
 }
 .services p {
 	color: #7a7a7a;
 	font-size: 12px;
 	margin-top: 5px;
+	pointer-events: none;
 }
 .services img {
 	width: 60px;
 	height: 60px;
-	cursor: pointer;
 }
 
 /* Our Projects Section */
@@ -275,7 +279,6 @@ section.default.service {
 	border-bottom: 5px solid #B28756;
 	color: #B28756;
 }
-
 .projects-images-container.container {
 	box-sizing: border-box;
 	flex-wrap: wrap;
@@ -342,23 +345,18 @@ section.default.service {
 	background-color: rgba(0, 0, 0, 0.85)!important;
 	background-blend-mode: color;
 }
-.our-team {
-	overflow: hidden;
-	margin: auto;
-	max-width: 1115px;
-}
-.our-team .sliders {
-	width: 1000vw;
-	height: 100%;
+.slider {
+	display: flex;
 }
 .our-team .slide {
-	width: 350px;
-	height: 100%;
+	width: 345px;
 	min-height: 430px;
-	display: inline-block;
+	display: inline-flex;
 	background-color: #fff;
-	margin-right: 30px;
+	margin: 0 15px;
 	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
 }
 .our-team .slidearea {
 	display: flex;
